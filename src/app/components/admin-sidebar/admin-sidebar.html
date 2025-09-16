@@ -1,6 +1,12 @@
-<div class="flex flex-col h-screen w-64 bg-gray-900 text-white shadow-lg">
+<div
+  class="flex flex-col h-screen w-64 shadow-lg"
+  style="background-color: var(--color-background); color: var(--color-foreground);"
+>
   <!-- Logo -->
-  <div class="p-4 text-center text-2xl font-bold border-b border-gray-700">
+  <div
+    class="p-4 text-center text-2xl font-bold border-b"
+    style="border-color: var(--color-card);"
+  >
     Admin Panel
   </div>
 
@@ -8,32 +14,33 @@
   <nav class="flex-1 p-4 space-y-2">
     <a
       routerLink="/dashboard"
-      routerLinkActive="bg-gray-700"
-      class="block px-4 py-2 rounded-lg hover:bg-gray-800 transition"
+      routerLinkActive="active-link"
+      class="block px-4 py-2 rounded-lg transition"
+      style="--tw-bg-opacity: 1; background-color: transparent;"
     >
       Dashboard
     </a>
 
     <a
       routerLink="/users"
-      routerLinkActive="bg-gray-700"
-      class="block px-4 py-2 rounded-lg hover:bg-gray-800 transition"
+      routerLinkActive="active-link"
+      class="block px-4 py-2 rounded-lg transition"
     >
       Users
     </a>
 
     <a
       routerLink="/posts"
-      routerLinkActive="bg-gray-700"
-      class="block px-4 py-2 rounded-lg hover:bg-gray-800 transition"
+      routerLinkActive="active-link"
+      class="block px-4 py-2 rounded-lg transition"
     >
       Posts
     </a>
 
     <a
       routerLink="/settings"
-      routerLinkActive="bg-gray-700"
-      class="block px-4 py-2 rounded-lg hover:bg-gray-800 transition"
+      routerLinkActive="active-link"
+      class="block px-4 py-2 rounded-lg transition"
     >
       Settings
     </a>
