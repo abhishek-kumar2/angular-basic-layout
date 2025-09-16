@@ -1,1 +1,8 @@
-<p>navbar works!</p>
+<header class="flex items-center justify-between px-6 py-4 shadow-md bg-background">
+  <a routerLink="/" class="text-xl font-bold text-primary-500">MyBlog</a>
+  <nav class="flex items-center gap-3">
+    <a routerLink="/" class="hover:underline">Home</a>
+    <a routerLink="/auth/login" class="btn btn-ghost">Login</a>
+    <button (click)="toggleTheme()" class="btn btn-outline">Theme</button>
+  </nav>
+</header>
