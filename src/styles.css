@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+/* src/styles.css */
+@import "tailwindcss";
+/* if using DaisyUI: also enable its plugin by adding @plugin "daisyui"; */
+@plugin "daisyui";
+
+/* --- Default theme tokens (Tailwind v4 CSS-first) --- */
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #0b1220;
+  --color-primary-500: #2563eb;
+  --color-card: #f8fafc;
+}
+
+/* --- Theme overrides (runtime switching via data-theme attribute) --- */
+@layer theme {
+  [data-theme="light"] {
+    --color-background: #ffffff;
+    --color-foreground: #0b1220;
+    --color-primary-500: #2563eb;
+    --color-card: #f8fafc;
+  }
+
+  [data-theme="dark"] {
+    --color-background: #0b1220;
+    --color-foreground: #e6eef8;
+    --color-primary-500: #60a5fa;
+    --color-card: #0f1724;
+  }
+}
+
+/* --- Some base styles so utilities map nicely --- */
+@layer base {
+  html { background-color: var(--color-background); color: var(--color-foreground); }
+  .card { background-color: var(--color-card); }
+}
