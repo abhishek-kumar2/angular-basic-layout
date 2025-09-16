@@ -1,8 +1,9 @@
 <header class="flex items-center justify-between px-6 py-4 shadow-md bg-background">
   <a routerLink="/" class="text-xl font-bold text-primary-500">MyBlog</a>
   <nav class="flex items-center gap-3">
-    <a routerLink="/" class="hover:underline">Home</a>
-    <a routerLink="/auth/login" class="btn btn-ghost">Login</a>
+    <a routerLink="/" routerLinkActive="underline font-semibold" class="hover:underline">Home</a>
+    <a routerLink="/auth/login" routerLinkActive="underline font-semibold" class="btn btn-ghost">Login</a>
+    <a routerLink="/admin" routerLinkActive="underline font-semibold" class="btn btn-ghost">Admin</a>
     <button (click)="toggleTheme()" class="btn btn-outline">Theme</button>
   </nav>
 </header>
