@@ -1,6 +1,13 @@
+<app-navbar></app-navbar>
 <div class="admin-container">
-  <aside class="sidebar">Admin Sidebar</aside>
-  <section class="main">
-    <router-outlet></router-outlet>
-  </section>
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <app-admin-sidebar></app-admin-sidebar>
+
+    <!-- Dynamic Content Area -->
+    <div class="flex-1 p-6 bg-gray-100 overflow-auto">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>
+<app-footer></app-footer>
