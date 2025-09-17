@@ -2,6 +2,48 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.2.
 
+
+src/app/
+│
+├── core/                  # Application-wide services & layouts
+│   ├── layouts/
+│   │   ├── default-layout/
+│   │   │   ├── default-layout.component.ts
+│   │   │   ├── default-layout.component.html
+│   │   │   └── default-layout.component.scss
+│   │   ├── admin-layout/
+│   │   │   ├── admin-layout.component.ts
+│   │   │   ├── admin-layout.component.html
+│   │   │   └── admin-layout.component.scss
+│   │   └── auth-layout/
+│   │       ├── auth-layout.component.ts
+│   │       ├── auth-layout.component.html
+│   │       └── auth-layout.component.scss
+│   └── services/
+│       └── auth.service.ts
+│
+├── domains/               # Business features
+│   ├── dashboard/
+│   │   ├── dashboard.component.ts
+│   │   ├── dashboard.component.html
+│   │   └── dashboard.routes.ts
+│   └── users/
+│       ├── users.component.ts
+│       ├── users.component.html
+│       └── users.routes.ts
+│
+├── shared/                # Reusable dumb components
+│   ├── navbar/
+│   │   ├── navbar.component.ts
+│   │   └── navbar.component.html
+│   └── footer/
+│       ├── footer.component.ts
+│       └── footer.component.html
+│
+└── app.routes.ts          # Central route configuration
+
+
+
 ## Development server
 
 To start a local development server, run:
@@ -57,3 +99,4 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
